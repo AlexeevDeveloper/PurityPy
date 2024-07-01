@@ -41,7 +41,7 @@ To implement PurityPy, we use the following libraries:
 All these libraries can be installed using pip:
 
 ```bash
-pip install rich flake8 pylint black autopep8
+pip install rich flake8 pylint black autopep8 rich
 ```
 
 ## Project Structure 📁
@@ -54,6 +54,10 @@ PurityPy/
 │   ├── __init__.py
 │   ├── cli.py
 │   ├── config.py
+│   ├── core/
+│   │   ├── __init__.py
+│   │   ├── data_processor.py
+│   │   └── data_analyzer.py
 │   ├── formatter/
 │   │   ├── __init__.py
 │   │   ├── black_formatter.py
@@ -62,7 +66,7 @@ PurityPy/
 │   │   ├── __init__.py
 │   │   ├── flake8_linter.py
 │   │   ├── pylint_linter.py
-│   │   └── custom_linter.py
+│   │   └── purefure.py
 │   ├── reporters/
 │   │   ├── __init__.py
 │   │   ├── console_reporter.py
@@ -135,6 +139,6 @@ Project releases are available at [this link](https://github.com/AlexeevBronisla
 ## License 📄
 Copyright © 2024, Alexeev Bronislav
 
-This project is distributed under the [GNU GPL v3 License](LICENSE).
+This project is distributed under the [GNU LGPL License](LICENSE).
 
 All rights reversed
